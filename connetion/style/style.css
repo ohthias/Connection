@@ -1,5 +1,43 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(to top, var(--primary-color-shadow) 0%, var(--background) 50%);
+    height: 100vh;
+}
+
+/* Navbar */
+
+header {
+  margin: 0 auto;
+  width: 100%;
+}
+
+header nav {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  button#theme {
+    padding: 0.5rem 1rem;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    transition: 500ms;
+
+    span {
+      font-size: 34px;
+    }
+
+    :hover {
+      color: var(--primary-color);
+      transition: 500ms;
+    }
+  }
+}
+
+header nav h5 {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: var(--primary-color);
 }

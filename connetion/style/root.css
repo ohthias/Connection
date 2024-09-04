@@ -15,10 +15,14 @@
 
 :root.light {
     --primary-color: #771111;
+    --primary-color-shadow: #77111184;
     --details: #75706F;
+    --background: #ECECEC;
 }
 
 :root.dark {
     --primary-color: #F51D1D;
+    --primary-color-shadow: #f51d1daa;
     --details: #ECECEC;
+    --background: #2f2f2f;
 }
