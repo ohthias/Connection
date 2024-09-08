@@ -22,7 +22,7 @@
 
 :root.dark {
     --primary-color: #F51D1D;
-    --primary-color-shadow: #f51d1daa;
+    --primary-color-shadow: #f51d1d84;
     --details: #ECECEC;
-    --background: #2f2f2f;
+    --background: #030303;
 }

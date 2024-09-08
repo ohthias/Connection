@@ -36,40 +36,45 @@
       <nav>
         <h5 class="montserrat-bold">Connection</h5>
         <button id="theme">
-          <span class="material-symbols-outlined" id="themeIcon"> toggle_off </span>
+          <span class="material-symbols-outlined" id="themeIcon">
+            toggle_off
+          </span>
         </button>
       </nav>
     </header>
     <main>
       <section class="timer-container">
         <h1 class="montserrat-bold">Pomodoro Timer</h1>
-        <span class="timer-clock montserrat-bold">00:00</span>
+        <span class="timer-clock montserrat-bold" id="timer">25:00</span>
         <div class="timer-details">
-          <button id="start" class="montserrat-medium">Iniciar</button>
+          <button
+            id="controlButton"
+            class="montserrat-medium"
+            onclick="controlTimer()"
+          >
+            Iniciar
+          </button>
           <span class="material-symbols-outlined"> notifications </span>
         </div>
       </section>
       <section class="list-container">
         <div class="container-name">
           <h2 class="montserrat-bold">Todo List</h2>
-          <span class="material-symbols-outlined"> edit </span>
-          <div class="container-list-details">
-            <button id="add-task">
-              <span class="material-symbols-outlined"> add </span>
-              <p>Nova Tarefa</p>
-            </button>
-            <ul id="tarefa">
-              <li class="item">
-                <input type="checkbox" name="" id="" />
-                <input type="text" />
-                <span class="material-symbols-outlined"> delete </span>
-              </li>
-            </ul>
-          </div>
+          <span class="material-symbols-outlined">edit</span>
+        </div>
+        <div class="container-list-details">
+          <button id="add-task">
+            <span class="material-symbols-outlined">add</span>
+            <p class="montserrat-bold">Nova Tarefa</p>
+          </button>
+          <hr>
+          <ul id="tarefa">
+          </ul>
         </div>
       </section>
     </main>
     <script src="./script/theme.js"></script>
     <script src="./script/timer.js"></script>
+    <script src="./script/todo.js"></script>
   </body>
 </html>
