@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon_io/site.webmanifest" />
+    <link rel="stylesheet" href="./style/root.css" />
+    <link rel="stylesheet" href="./style/font.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/media.css" />
+    <title>Connection</title>
+  </head>
+  <body class="light">
+    <header>
+      <nav>
+        <h5 class="montserrat-bold">Connection</h5>
+        <button id="theme">
+          <span class="material-symbols-outlined" id="themeIcon">
+            toggle_off
+          </span>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section class="timer-container">
+        <h1 class="montserrat-bold">Pomodoro Timer</h1>
+        <span class="timer-clock montserrat-bold" id="timer">25:00</span>
+        <div class="timer-details">
+          <button
+            id="controlButton"
+            class="montserrat-medium"
+            onclick="controlTimer()"
+          >
+            Iniciar
+          </button>
+          <span class="material-symbols-outlined"> notifications </span>
+        </div>
+      </section>
+      <section class="list-container">
+        <div class="container-name">
+          <h2 class="montserrat-bold">Todo List</h2>
+          <span class="material-symbols-outlined">edit</span>
+        </div>
+        <div class="container-list-details">
+          <button id="add-task">
+            <span class="material-symbols-outlined">add</span>
+          </button>
+          <hr>
+          <ul id="tarefa">
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="./script/theme.js"></script>
+    <script src="./script/timer.js"></script>
+    <script src="./script/todo.js"></script>
+  </body>
+</html>
