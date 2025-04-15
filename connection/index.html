@@ -1,65 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./favicon_io/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./favicon_io/site.webmanifest" />
-    <link rel="stylesheet" href="./style/root.css" />
-    <link rel="stylesheet" href="./style/font.css" />
-    <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="./style/media.css" />
-    <title>Connection</title>
-  </head>
-  <body class="light">
-    <header>
-      <nav>
-        <h5 class="montserrat-bold">Connection</h5>
-        <button id="theme">
-          <span class="material-symbols-outlined" id="themeIcon">
-            toggle_off
-          </span>
-        </button>
-      </nav>
-    </header>
-    <main>
-      <section class="timer-container">
-        <h1 class="montserrat-bold">Pomodoro Timer</h1>
-        <span class="timer-clock montserrat-bold" id="timer">25:00</span>
-        <div class="timer-details">
-          <button
-            id="controlButton"
-            class="montserrat-medium"
-            onclick="controlTimer()"
-          >
-            Iniciar
-          </button>
-          <span class="material-symbols-outlined"> notifications </span>
-        </div>
-      </section>
-    </main>
-    <script src="./script/theme.js"></script>
-    <script src="./script/timer.js"></script>
-    <script src="./script/todo.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=add" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=play_arrow" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=notifications" />
+  <link rel="stylesheet" href="./style/root.css" />
+  <lk rel="stylesheet" href="./style/font.css" />
+  <title>Connection</title>
+</head>
+<body>
+  <header>
+    <div class="side-left">
+      <picture class="logo-picutre">
+        <img src="./svg/logo_connection_default.svg" alt="logo_connection_default" class="logo-svg" sizes="30px" />
+      </picture>
+    </div>
+    <div class="side-right">
+      <button onclick="changeTheme()">
+        <img src="./svg/icone_switch_theme.svg" alt="icone_switch_theme" class="icone_switch_theme" sizes="24px" />
+      </button>
+    </div>
+  </header>
+  <main>
+    <section class="temporizador-container">
+      <div class="temporizador">
+        <div class="temporizador-text montserrat-italic">Temporizador</div>
+        <div class="temporizador-time montserrat-bold">00:00</div>
+      </div>
+      <div class="temporizador-controls">
+        <button class="temporizador-button" id="switchButtonTemporizador"><span class="material-symbols-outlined">
+          play_arrow
+          </span></button>
+        <button class="temporizador-button" id="resetButtonTemporizador"><span class="material-symbols-outlined">
+          forward_media
+          </span></button>
+        <button class="temporizador-button" id="alertButtonTemporizador"><span class="material-symbols-outlined">
+          notifications
+          </span></button>
+      </div>
+      <div class="switch-types-temporizador">
+        <button class="switch-type-temporizador active montserrat-bold" id="switchTypeTemporizadorFoco">Foco</button>
+        <button class="switch-type-temporizador montserrat-regular" id="switchTypeTemporizadorRelax">Descanço</button>
+      </div>
+    </section>
+    <section class="todo-list-section">
+      <div class="todo-list-header montserrat-bold">Lista de Tarefas</div>
+      <div class="todo-list-input-container">
+        <input class="montserrat-regular" type="text" id="todoInput" placeholder="Adicionar tarefa..." />
+        <button id="addTodoButton"><span class="material-symbols-outlined">
+          add
+          </span></button>
+      </div>
+      <ul id="todoList"></ul>
+    </section>
+  </main>
+</body>
+
 </html>
