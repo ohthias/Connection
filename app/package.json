@@ -1,0 +1,28 @@
+{
+  "name": "connection-app",
+  "version": "2.0.0",
+  "description": "Connection combina o método Pomodoro com uma lista de tarefas intuitiva para aumentar sua produtividade e ajudar no gerenciamento eficiente do tempo.",
+  "main": "main.js",
+  "build": {
+    "appId": "com.connection.app",
+    "productName": "Connection",
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/logo_connection_default_icon.ico"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matheus Gabriel Santos Silva",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^35.1.5",
+    "electron-builder": "^26.0.12"
+  }
+}
