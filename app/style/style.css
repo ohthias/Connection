@@ -1,9 +1,18 @@
 body {
   background-color: var(--background);
   color: var(--font-color);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.window-content {
+  width: 100%;
+  overflow-y: auto;
 }
 
 header {
+  position: relative;
+  top: 30px;
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -40,6 +49,9 @@ header {
 }
 
 main {
+  overflow: auto;
+  position: relative;
+  top: 20px;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -59,6 +71,7 @@ main {
 
     .temporizador {
       grid-area: 1 / 1 / 2 / 2;
+      width: 180px;
 
       .temporizador-text {
         font-size: 16px;
@@ -91,6 +104,10 @@ main {
         transition: all 0.3s ease-in-out;
         cursor: pointer;
 
+        span {
+          cursor: pointer;
+        }
+
         &#switchButtonTemporizador {
           border: 1px solid var(--primary-color);
           background-color: var(--background-button-primary);
@@ -101,6 +118,11 @@ main {
           background-color: var(--background-button-hover);
           color: var(--secondary-color);
           box-shadow: 0 0 5px var(--primary-color-shadow-light), 0 0 15px var(--primary-color-shadow-dark);
+        }
+
+        &.active {
+          background-color: var(--primary-color);
+          color: var(--font-color-white);
         }
       }
     }
@@ -147,6 +169,10 @@ main {
     width: 100%;
     height: fit-content;
 
+    ul{
+      overflow: visible;
+    }
+
     h2.todo-list-title {
       font-size: 21px;
       color: var(--primary-color);
@@ -161,7 +187,7 @@ main {
 
       input[type='checkbox'] {
         width: 24px;
-        height: 20px;
+        height: 24px;
         border: 1.5px solid var(--primary-color);
         border-radius: 100%;
         accent-color: var(--primary-color);
@@ -171,7 +197,7 @@ main {
         background-color: var(--background-button-secondary);
         transition: all 0.3s ease-in-out;
         cursor: pointer;
-        
+
         &:checked {
           background-color: var(--primary-color);
           border: 1px solid var(--secondary-color);
@@ -185,9 +211,16 @@ main {
         padding: 4px;
         background: transparent;
         outline: none;
+        cursor: text;
+
+        &.completed {
+          text-decoration: line-through;
+          color: var(--background-button-secondary);
+        }
       }
 
-      button#addTodoButton {
+      button#addTodoButton,
+      span.delete-icon {
         padding: 8px;
         border: 0;
         border-radius: 100%;
@@ -196,7 +229,7 @@ main {
         color: var(--primary-color);
         transition: all 0.3s ease-in-out;
         cursor: pointer;
-        
+
         span {
           font-size: 16px;
         }

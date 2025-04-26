@@ -6,6 +6,12 @@
   box-sizing: border-box;
   scrollbar-color: var(--primary-color) transparent;
   scrollbar-width: thin;
+  list-style: none;
+  cursor: default;
+}
+
+::selection {
+  background: none;
 }
 
 :root {
@@ -14,7 +20,9 @@
   --size-gap-small: 8px;
   --navbar-logo-size: 32px;
   --navbar-itens-size: 40px;
+}
 
+:root.light-theme {
   --background: #f3f3f3;
   --font-color: #121212;
   --font-color-white: #f3f3f3;
@@ -24,6 +32,21 @@
   --background-button-hover: #a6a6a6;
 
   --primary-color: #840808;
+  --primary-color-shadow-light: #ae161676;
+  --primary-color-shadow-dark: #84080876;
+  --secondary-color: #cc0d0d;
+}
+
+:root.dark-theme {
+  --background: #121212;
+  --font-color: #f3f3f3;
+  --font-color-white: #121212;
+
+  --background-button-primary: #84080876;
+  --background-button-secondary: #d6d6d6;
+  --background-button-hover: #a6a6a6;
+
+  --primary-color: #f3f3f3;
   --primary-color-shadow-light: #ae161676;
   --primary-color-shadow-dark: #84080876;
   --secondary-color: #cc0d0d;
