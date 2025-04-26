@@ -7,7 +7,7 @@
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Matheus Gabriel",
+  "author": "Matheus Gabriel Santos Silva",
   "license": "MIT",
   "devDependencies": {
     "electron": "^35.1.5"
