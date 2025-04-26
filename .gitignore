@@ -2,6 +2,7 @@
 node_modules/
 figma/
 favicons/
+dist/
 
 # files
 *.log
