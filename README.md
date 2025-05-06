@@ -1,4 +1,4 @@
-# Connection 2.0.0
+# Connection 2.1.0
 
 **Connection** é um aplicativo desenvolvido com Electron para facilitar a criação de listas de tarefas e a utilização de um timer Pomodoro. O objetivo é proporcionar um ambiente simples e funcional para melhorar a produtividade, combinando tarefas e tempo de foco de forma intuitiva e prática.
 
@@ -7,6 +7,8 @@
 - **Pomodoro Timer**: A aplicação inclui um timer baseado na técnica Pomodoro, que alterna entre períodos de trabalho e descanso.
 - **Lista de Tarefas**: Organize suas tarefas diárias de forma simples e eficiente.
 - **Interface Intuitiva**: Design fácil de usar, com foco em simplicidade e produtividade.
+- **Histórico**: Tenha salvo todos os periodos de foco que obteve durante o uso.
+- **Personalize**: Debloqueie temas, enquanto utiliza o sistema
 
 ## Tecnologias Utilizadas
 
