@@ -8,7 +8,7 @@
 - **Lista de Tarefas**: Organize suas tarefas diárias de forma simples e eficiente.
 - **Interface Intuitiva**: Design fácil de usar, com foco em simplicidade e produtividade.
 - **Histórico**: Tenha salvo todos os períodos de foco que obteve durante o uso.
-- **Personalize**: Debloqueie temas, enquanto utiliza o sistema
+- **Personalize**: Desbloqueie temas, enquanto utiliza o sistema
 
 ## Tecnologias Utilizadas
 
