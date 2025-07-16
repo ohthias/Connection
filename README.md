@@ -7,7 +7,7 @@
 - **Pomodoro Timer**: A aplicação inclui um timer baseado na técnica Pomodoro, que alterna entre períodos de trabalho e descanso.
 - **Lista de Tarefas**: Organize suas tarefas diárias de forma simples e eficiente.
 - **Interface Intuitiva**: Design fácil de usar, com foco em simplicidade e produtividade.
-- **Histórico**: Tenha salvo todos os periodos de foco que obteve durante o uso.
+- **Histórico**: Tenha salvo todos os períodos de foco que obteve durante o uso.
 - **Personalize**: Debloqueie temas, enquanto utiliza o sistema
 
 ## Tecnologias Utilizadas
